@@ -1,0 +1,89 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+	<link href="TestSurvey.css" rel="stylesheet" type="text/css">
+</head>
+
+<h1 id = "title">Test Survey </hl>
+
+<div id = "outer"> 
+  <p id = "description">This is a test survey project </p>
+  <form id = "survey-form">
+    <div class = "leftTab">
+      <div class = "labels">
+        <label id = "name-label" for = "name">Name: </label>
+      </div>
+      <div class= "rightTab"> 
+        <input autofocus type="text" name="name" id="name" class = "input" placeholder="Type your name" required>
+      </div>
+    </div>
+    <div class = "leftTab">
+      <div class = "labels">
+        <label id = "email-label" for = "email">Email: </label>
+      </div>
+      <div class= "rightTab"> 
+        <input type="email" name="email" id="email" class = "input" placeholder="Type your email address" required>
+      </div>
+    </div>
+    <div class = "leftTab">
+      <div class = "labels">
+        <label id = "number-label" for = "age">Age: </label>
+      </div>
+      <div class= "rightTab"> 
+        <input type="number" name="age" id="number" min="1" max ="125" class = "input" placeholder="Type your email address" required>
+      </div>
+    </div>
+    <div class = "leftTab">
+      <div class = "labels">
+        <label = "years">How long have you been coding?</label>
+      </div>
+      <div class = "rightTab">
+        <select id = "dropdown" name = "years" class = "dropdown">
+          <option value = "lessWeek">Less than a week</option>
+          <option value = "month">Around a month</option>
+          <option value = "halfyear">Around 6 months</option>
+          <option value = "oneyear">Around a year</option>
+          <option value = "overyear">Over a year</option>
+        </select>
+      </div>
+    </div>
+    <div class = "leftTab">
+      <div class = "labels">
+        <label for = "bestLang">What programming language are you best at?</label>
+      </div>
+      <div class ="rightTab">
+        <ul style = "list-style: none;">
+          <li class="radio"><label>Java <input name="radio-buttons" value="1" type="radio" class="userInput"</label></li>
+          <li class="radio"><label>C++ <input name="radio-buttons" value="2" type="radio" class="userInput"</label></li>
+          <li class="radio"><label>Python <input name="radio-buttons" value="3" type="radio" class="userInput"</label></li>
+          <li class="radio"><label>HTML/CSS <input name="radio-buttons" value="4" type="radio" class="userInput"</label></li>
+          <li class="radio"><label>Other <input name="radio-buttons" value="5" type="radio" class="userInput"</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class ="leftTab">
+      <div class ="labels">
+        <label for="availability">What day(s) are you available? (Check all that apply)</label>
+      </div>
+      <div class ="rightTab">
+        <ul style = "list-style: none" id = "availability">
+          <li class="checkbox"><label><input name="day" value="1" type="checkbox" class="userInput">Monday</label></li>
+          <li class="checkbox"><label><input name="day" value="2" type="checkbox" class="userInput">Tuesday</label></li>
+          <li class="checkbox"><label><input name="day" value="3" type="checkbox" class="userInput">Wednesday</label></li>
+          <li class="checkbox"><label><input name="day" value="4" type="checkbox" class="userInput">Thursday</label></li>
+          <li class="checkbox"><label><input name="day" value="5" type="checkbox" class="userInput">Friday</label></li>
+          <li class="checkbox"><label><input name="day" value="6" type="checkbox" class="userInput">Saturday</label></li>
+          <li class="checkbox"><label><input name="day" value="7" type="checkbox" class="userInput">Sunday</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class ="leftTab">
+      <div class = "labels">
+        <label for="questions">Any questions you have for this position?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="questions" class="input" style="height:50px; resize:vertical;" name="comment" placeholder="Type your question(s) here"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
